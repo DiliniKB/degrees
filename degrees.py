@@ -98,6 +98,9 @@ def shortest_path(source, target):
     frontier.add(start)
     explored = set()
 
+    if source == target:
+        return []
+
     while True:
         if frontier.empty():
             return None
